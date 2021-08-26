@@ -1,22 +1,33 @@
 ---
 layout: default
-title: Neat Starter
+title: Tetraco
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<main class="w-full">
+  <header class="bg-home bg-cover bg-center bg-gray-700 bg-blend-multiply p-32 text-white">
+    <div class="container">
+      <h1 class="text-6xl font-thin text-left mb-6 tracking-tight">Tetraco, LLC</h1>
+      <h2 class="text-2xl font-thin text-left mb-1">Quality oil and gas industry checmicals</h2>
+      <h3 class="text-base font-thin text-left">Tetraco, LLC is the leading oil and gas chemical manufacturer in West Texas</h3>
+    </div>
+  </header>
+  
+  <section class="container mx-auto xlg:h-screen flex flex-col justify-center py-24 pt-16 grid grid-cols-2 gap-x-24">
+    <div>
+      <h2 class="text-2xl mb-6">Tetraco, LLC is an innovative oil and gas industry chemical manufacturer</h2>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+      <p class="text-base mb-4">We are proud to offer custom blending, custom reactions and delivery services.</p>
 
-  {% include "./_includes/partials/content.html" %}
-</div>
+      <p class="text-base mb-4">With two locations with reactors and blending equipment, we can complete orders in a matter of days, not weeks like our larger competitors.</p>
+
+      <p class="text-base mb-4">We have been in business since 1996 and have established ourselves as one of the premier sources for oilfield chemicals in the Permian Basin and beyond. Our emphasis is on quality control and we would like to have the opportunity to satisfy your chemical needs, so please contact us.</p>
+    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vcFGtsOgpQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  
+  <div class="container">
+    {% include "./_includes/partials/content.html" %}
+  </div>
+</main>

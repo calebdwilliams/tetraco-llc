@@ -12,6 +12,9 @@ module.exports = {
     },
     extend: {
       colors: {},
+      backgroundImage: theme => ({
+        home: "url('/static/img/background-home.jpeg')"
+      })
     },
   },
   variants: {},
