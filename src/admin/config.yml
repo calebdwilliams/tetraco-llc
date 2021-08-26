@@ -38,7 +38,7 @@ collections:
       preview: true
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Activity", name: "activity", widget: "number" }
       - { label: "Specific Gravity", name: "specificGravity", widget: "string" }
       - { label: "pH", name: "ph", widget: "string" }
@@ -57,7 +57,7 @@ collections:
       preview: true
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Activity", name: "activity", widget: "number" }
       - { label: "Specific Gravity", name: "specificGravity", widget: "string" }
       - { label: "pH", name: "ph", widget: "string" }
