@@ -1,0 +1,19 @@
+---
+title: Concentrates
+---
+
+<section class="mt-15">
+    {%- for product in collections.concentrates -%}
+        {%- if product.data.name -%}
+        <section>
+            <h1>{{ product.data.name }}</h1>
+            <p>{{ product.data.description }}</p>
+            <ul>
+                <li>Activity: {{ product.data.activity }} percent</li>
+                <li>pH: {{ product.data.ph }}</li>
+                <li>Specific Gravity: {{ product.data.specificGravity }}</li>
+            </ul>
+        </section>
+        {%- endif -%}
+    {%- endfor -%}
+</section>

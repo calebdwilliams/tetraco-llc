@@ -1,10 +1,9 @@
 backend:
   # Use netlify identity as backend
-  name: git-gateway
+  name: github
   branch: master
   ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
+  repo: tetraco-llc/tetraco-llc
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
@@ -30,6 +29,25 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+  - label: "Concentrates"
+    name: "concentrates"
+    folder: "src/concentrates"
+    create: true
+    delete: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Activity", name: "activity", widget: "number" }
+      - { label: "Specific Gravity", name: "specificGravity", widget: "string" }
+      - { label: "pH", name: "ph", widget: "string" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["concentrates"]
   - label: "Settings"
     name: "settings"
     editor:
