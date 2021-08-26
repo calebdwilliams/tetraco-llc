@@ -1,9 +1,10 @@
-<div class="{{ 'lg:fixed' if path == 'home' }} w-full">
-    <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
+<header class="{{ 'lg:fixed' if path == 'home' }} w-full shadow">
+    <nav class="flex items-center justify-center lg:justify-between flex-wrap p-5 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         <!--Logo etc-->
-        <div class="flex items-center">
+        <div class="flex items-center bg-white w-40">
             <a href="/" class="text-indigo-500 font-bold text-lg">
-                Logo</a>
+                <img src="/static/img/logo.png" alt="Tetraco LLC logo">
+            </a>
         </div>
 
         <!--Toggle button (hidden on large screens)-->
@@ -30,4 +31,4 @@
             {% endif %}
         </div>
     </nav>
-</div>
+</header>

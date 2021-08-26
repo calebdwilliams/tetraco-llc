@@ -2,18 +2,21 @@
 title: Concentrates
 ---
 
-<section class="mt-15">
-    {%- for product in collections.concentrates -%}
-        {%- if product.data.name -%}
-        <section>
-            <h1>{{ product.data.name }}</h1>
-            <p>{{ product.data.description }}</p>
-            <ul>
-                <li>Activity: {{ product.data.activity }} percent</li>
-                <li>pH: {{ product.data.ph }}</li>
-                <li>Specific Gravity: {{ product.data.specificGravity }}</li>
-            </ul>
-        </section>
-        {%- endif -%}
-    {%- endfor -%}
-</section>
+<div class="grid grid-cols-1">
+    <div>
+        {%- for product in collections.concentrates -%}
+            {%- if product.data.name -%}
+            <section class="mb-6">
+                <h2 class="text-xl mb-1">{{ product.data.name }}</h2>
+                <p class="text-base">{{ product.data.description }}</p>
+                <ul>
+                    <li>Activity: {{ product.data.activity }} percent</li>
+                    <li>pH: {{ product.data.ph }}</li>
+                    <li>Specific Gravity: {{ product.data.specificGravity }}</li>
+                </ul>
+            </section>
+            {%- endif -%}
+        {%- endfor -%}
+    </div>
+    <aside></aside>
+</div>

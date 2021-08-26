@@ -1,10 +1,10 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
+  - text: Concentrates
+    url: "/concentrates"
+  - text: Intermediates
+    url: "/intermediates"
+  - text: Phosphonates
+    url: "/phosphonates"
+  - text: ADBAC Alkyl Dimethyl Benzyl Ammonium Chloride
     url: "/blog"
