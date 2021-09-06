@@ -7,5 +7,5 @@ type:
   - Mid-stream Chemicals
 tags:
   - Finished Products
-  - Corrosion Inhibitors
+  - Scale Inhibitors
 ---
