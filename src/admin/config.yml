@@ -96,12 +96,12 @@ collections:
       preview: true
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown", required: false }
-      - { label: "Activity", name: "activity", widget: "string" }
-      - { label: "Specific Gravity", name: "specificGravity", widget: "string" }
-      - { label: "pH", name: "ph", widget: "string", required: false },
-      - { label: "Minimum pH", name: "phMin": widget: "string", required: false },
-      - { label: "Maximum pH", name: "phMax": widget: "string", required: false },
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Activity", name: "activity", widget: "string", required: false }
+      - { label: "Specific Gravity", name: "specificGravity", widget: "string", required: faslse }
+      - { label: "pH", name: "ph", widget: "string", required: false }
+      - { label: "Minimum pH", name: "phMin", widget: "string", required: false }
+      - { label: "Maximum pH", name: "phMax", widget: "string", required: false }
       - { label: "CAS Number", name: "cas", widget: "string", required: false }
       - widget: select
         label: "chemical type"
@@ -113,7 +113,7 @@ collections:
           "Water Treatment",
           "Drilling Chemicals",
           "Fracturing Chemicals",
-          "Mid-stream Chemicals"
+          "Mid-stream Chemicals",
         ]
       - widget: select
         label: "tags"
@@ -129,8 +129,8 @@ collections:
           "Phosphonates",
           "ADBACs and Coco Quats",
           "Water Treatment/Clarifiers",
-          "Surfactants"
-        ],
+          "Surfactants",
+        ]
         required: false
   - label: "Settings"
     name: "settings"
