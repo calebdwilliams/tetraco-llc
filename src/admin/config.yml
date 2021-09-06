@@ -67,6 +67,71 @@ collections:
         multiple: true
         create: true
         options: ["intermediates"]
+  - label: "Phosphonates"
+    name: "phosphonates"
+    folder: "src/phosphonates"
+    create: true
+    delete: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown", required: false }
+      - { label: "Activity", name: "activity", widget: "string" }
+      - { label: "Specific Gravity", name: "specificGravity", widget: "string" }
+      - { label: "pH", name: "ph", widget: "string" }
+      - { label: "CAS Number", name: "cas", widget: "string", required: false }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["phosphonates"]
+  - label: "Products"
+    name: "products"
+    folder: "src/products"
+    create: true
+    delete: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown", required: false }
+      - { label: "Activity", name: "activity", widget: "string" }
+      - { label: "Specific Gravity", name: "specificGravity", widget: "string" }
+      - { label: "pH", name: "ph", widget: "string", required: false },
+      - { label: "Minimum pH", name: "phMin": widget: "string", required: false },
+      - { label: "Maximum pH", name: "phMax": widget: "string", required: false },
+      - { label: "CAS Number", name: "cas", widget: "string", required: false }
+      - widget: select
+        label: "chemical type"
+        name: "type"
+        multiple: true
+        create: true
+        options: [
+          "Production Chemicals",
+          "Water Treatment",
+          "Drilling Chemicals",
+          "Fracturing Chemicals",
+          "Mid-stream Chemicals"
+        ]
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: [
+          "Concentrates",
+          "Imtermediates",
+          "Finished Products",
+          "Production Checmicals",
+          "Scale Inhibitors",
+          "Phosphonates",
+          "ADBACs and Coco Quats",
+          "Water Treatment/Clarifiers",
+          "Surfactants"
+        ],
+        required: false
   - label: "Settings"
     name: "settings"
     editor:

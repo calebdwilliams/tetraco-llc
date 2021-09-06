@@ -2,11 +2,11 @@
 title: Concentrates
 ---
 
-<div class="grid grid-cols-1">
-    <div>
+<div class="container grid grid-cols-12 gap-6">
+    <ul class="list-none col-start-1 col-end-10">
         {%- for product in collections.concentrates -%}
             {%- if product.data.name -%}
-            <section class="mb-6">
+            <li class="bg-gray-50 mb-6 p-5 border rounded border-gray-200">
                 <h2 class="text-xl mb-1">{{ product.data.name }}</h2>
                 <p class="text-base">{{ product.data.description }}</p>
                 <ul>
@@ -14,9 +14,21 @@ title: Concentrates
                     <li>pH: {{ product.data.ph }}</li>
                     <li>Specific Gravity: {{ product.data.specificGravity }}</li>
                 </ul>
-            </section>
+            </li>
             {%- endif -%}
         {%- endfor -%}
-    </div>
-    <aside></aside>
+    </ul>
+    <aside class="border rounded border-gray-200 col-start-10 col-end-13 p-5">
+        <form>
+            <h3 class="text-base mb-1">Filter products</h3>
+            <hr>
+            <label class="rounded border p-5">
+                <input type="radio" class="appearance-none ">
+                test
+            </label>
+        </form>
+    </aside>
+</div>
+<div class="container">
+    {% include "../_includes/partials/content.html" %}
 </div>
