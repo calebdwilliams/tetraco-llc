@@ -5,5 +5,5 @@ type:
   - Production Chemicals
 tags:
   - Concentrates
-  - Corrosion Inhinitors
+  - Corrosion Inhibitors
 ---

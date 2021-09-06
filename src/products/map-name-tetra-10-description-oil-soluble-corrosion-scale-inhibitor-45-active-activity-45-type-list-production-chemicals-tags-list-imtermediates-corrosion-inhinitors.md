@@ -6,5 +6,5 @@ type:
   - Production Chemicals
 tags:
   - Imtermediates
-  - Corrosion Inhinitors
+  - Corrosion Inhibitors
 ---

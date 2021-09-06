@@ -5,5 +5,5 @@ type:
   - Production Chemicals
 tags:
   - Finished Products
-  - Corrosion Inhinitors
+  - Corrosion Inhibitors
 ---
