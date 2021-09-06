@@ -5,4 +5,5 @@ type:
   - Water Treatment
 tags:
   - Water Treatment/Clarifiers
+  - Concentrates
 ---
