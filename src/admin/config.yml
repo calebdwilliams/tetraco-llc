@@ -98,7 +98,7 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Activity", name: "activity", widget: "string", required: false }
-      - { label: "Specific Gravity", name: "specificGravity", widget: "string", required: faslse }
+      - { label: "Specific Gravity", name: "specificGravity", widget: "string", required: false }
       - { label: "pH", name: "ph", widget: "string", required: false }
       - { label: "Minimum pH", name: "phMin", widget: "string", required: false }
       - { label: "Maximum pH", name: "phMax", widget: "string", required: false }
