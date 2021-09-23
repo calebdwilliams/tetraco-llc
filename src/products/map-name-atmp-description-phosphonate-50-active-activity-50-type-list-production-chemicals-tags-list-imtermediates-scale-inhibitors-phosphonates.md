@@ -5,7 +5,7 @@ activity: "50"
 type:
   - Production Chemicals
 tags:
-  - Imtermediates
+  - Intermediates
   - Scale Inhibitors
   - Phosphonates
 ---

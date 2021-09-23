@@ -5,6 +5,6 @@ type:
   - Production Chemicals
 tags:
   - Scale Inhibitors
-  - Imtermediates
+  - Intermediates
   - Phosphonates
 ---

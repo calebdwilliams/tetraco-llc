@@ -4,7 +4,7 @@ description: Phosphonate 50% active
 type:
   - Production Chemicals
 tags:
-  - Imtermediates
+  - Intermediates
   - Scale Inhibitors
   - Phosphonates
 ---

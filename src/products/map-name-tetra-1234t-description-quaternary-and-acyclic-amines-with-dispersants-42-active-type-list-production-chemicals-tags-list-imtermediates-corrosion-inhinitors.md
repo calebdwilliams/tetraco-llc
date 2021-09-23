@@ -4,6 +4,6 @@ description: Quaternary and acyclic amines with dispersants 42% active
 type:
   - Production Chemicals
 tags:
-  - Imtermediates
+  - Intermediates
   - Corrosion Inhibitors
 ---

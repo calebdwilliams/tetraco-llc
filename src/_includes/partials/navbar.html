@@ -22,9 +22,24 @@
 
                 <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
                     {% for item in navigation.items %}
-                        <li class="nav__item mr-3">
-                            <a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-indigo-500 py-2 px-4" href="{{ item.url }}">{{ item.text }}</a>
-                        </li>
+                        {% if item.url %}
+                            <li class="nav__item mr-3">
+                                <a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline py-2 px-4" href="{{ item.url }}">{{ item.text }}</a>
+                            </li>
+                        {% else %}
+                            <li class="nav__item mr-3 relative group">
+                                <a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-indigo-500 py-2 px-4" href="{{ item.url }}">{{ item.text }}</a>
+                                {% if item.pages %}
+                                <ul class="absolute text-left bg-white px-4 py-2 border rounded border-gray-200 w-72 hidden">
+                                    {% for page in item.pages %}
+                                        <li class="my-3 ">
+                                            <a href="{{ page.url }}" class="text-gray-500 no-underline hover:text-indigo-500">{{ page.name }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
 
@@ -32,3 +47,9 @@
         </div>
     </nav>
 </header>
+
+<style>
+    .group:focus-within > .hidden, .group:focus-visible > .hidden, .group:hover > .hidden {
+        display: block;
+    }
+</style>

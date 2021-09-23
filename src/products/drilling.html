@@ -1,0 +1,27 @@
+---
+title: Drilling Chemicals
+---
+
+<div class="grid grid-cols-12 gap-8">
+    <div class="col-span-8">
+        <!-- <h3 class="font-medium font-base mb-4">Concentrates</h3> -->
+        <ul>
+            {%- for product in collections.drilling -%}
+                <li itemscope itemtype="https://schema.org/Product" class="p-5 border rounded border-gray-200 mb-8">
+                    <h4 itemprop="name" class="text-lg font-medium mb-2">{{ product.data.name }}</h4>
+                    <p itemprop="description" class="text-base mb-4">{{ product.data.description }}</p>
+                    <ul class="flex gap-2">
+                        {%- for tag in product.data.tags -%}
+                            {%- if tag !== 'products' -%}
+                                <li itemprop="category" class="text-xs bg-blue-700 text-white px-2 rounded-lg">{{ tag }}</li>
+                            {%- endif -%}
+                        {%- endfor -%}
+                    </ul>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    <div class="col-span-4 ">
+        {% include "../_includes/partials/contact-sidebar.html" %}
+    </div>
+</div>

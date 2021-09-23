@@ -1,10 +1,15 @@
 ---
 items:
-  - text: Concentrates
-    url: "/concentrates"
-  - text: Intermediates
-    url: "/intermediates"
-  - text: Phosphonates
-    url: "/phosphonates"
-  - text: ADBAC Alkyl Dimethyl Benzyl Ammonium Chloride
-    url: "/blog"
+  - text: Production Chemicals
+    pages:
+      - { name: "Corrosion Inhibitors", url: "/products/corrosion-inhibitors" }
+      - { name: "Scale Inhibitors", url: "/products/scale-inhibitors" }
+      - { name: "Demulsifiers/Paraffin Products", url: "/products/demulsifiers"}
+  - text: Water Treatment
+    url: "/products/water-treatment"
+  - text: Drilling
+    url: "/products/drilling"
+  - text: Fracturing
+    url: "/products/fracturing"
+  - text: Mid-Stream
+    url: "/products/mid-stream"

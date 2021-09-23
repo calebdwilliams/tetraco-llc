@@ -46,7 +46,7 @@ collections:
         create: true
         options: [
           "Concentrates",
-          "Imtermediates",
+          "Intermediates",
           "Finished Products",
           "Production Checmicals",
           "Scale Inhibitors",

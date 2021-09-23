@@ -5,5 +5,5 @@ type:
   - Drilling Chemicals
 tags:
   - Scale Inhibitors
-  - Corrosion Inhinitors
+  - Corrosion Inhibitors
 ---

@@ -1,30 +1,68 @@
 ---
-title: Products
+title: Corrosion Inhibitors
 ---
 
 <div class="grid grid-cols-1">
-    <div>
-        {%- for product in collections.all -%}
-            {%- if product.data.name -%}
-            <section class="mb-6">
-                <h2 class="text-xl mb-1">{{ product.data.name }}</h2>
-                <p class="text-base">{{ product.data.description }}</p>
-                <ul>
-                    <li>Activity: {{ product.data.activity }} percent</li>
-                    <li>pH: {{ product.data.ph }}</li>
-                    <li>Specific Gravity: {{ product.data.specificGravity }}</li>
-                    {%- if product.data.cas -%} 
-                        <li>CAS Number: {{ product.data.cas }}</li>
-                    {%- endif -%}
-                    <ul>
-                        {%- for tag in product.data.tags -%}
-                        <li>{{tag}}</li>
-                        {%- endfor -%}
-                    </ul>
+    <h3 class="font-medium font-base mb-4">Concentrates</h3>
+    <ul>
+        {%- for product in collections.productionCorrosionInhibitorConcentrates -%}
+            <li itemscope itemtype="https://schema.org/Product" class="p-5 border rounded border-gray-200 mb-4">
+                <h4 itemprop="name" class="text-xl font-medium mb-2">{{ product.data.name }}</h4>
+                <p itemprop="description" class="text-base mb-4">{{ product.data.description }}</p>
+                <ul class="flex gap-2">
+                    {%- for tag in product.data.tags -%}
+                        {%- if tag !== 'products' -%}
+                            <li itemprop="category" class="text- bg-blue-700 text-white px-4 rounded-xl">{{ tag }}</li>
+                        {%- endif -%}
+                    {%- endfor -%}
                 </ul>
-            </section>
-            {%- endif -%}
+            </li>
         {%- endfor -%}
-    </div>
-    <aside></aside>
+    </ul>
+
+    <h3>Intermediates</h3>
+    {%- for product in collections.productionCorrosionInhibitorIntermediates -%}
+        <ol>
+            <li>{{ product.data.name }}</li>
+        </ol>
+    {%- endfor -%}
+
+    <h3>Finished Products</h3>
+    {%- for product in collections.productionCorrosionInhibitorFinishedProducts -%}
+        <ol>
+            <li>{{ product.data.name }}</li>
+        </ol>
+    {%- endfor -%}
+<hr>
+    <h2>Scale Inhibitors</h2>
+
+    <h3>Concentrates</h3>
+    {%- for product in collections.productionScaleInhibitorConcentrates -%}
+        <ol>
+            <li>{{ product.data.name }}</li>
+        </ol>
+    {%- endfor -%}
+
+    <h3>Intermediates</h3>
+    {%- for product in collections.productionScaleInhibitorIntermediates -%}
+        <ol>
+            <li>{{ product.data.name }}</li>
+        </ol>
+    {%- endfor -%}
+
+    <h3>Finished Products</h3>
+    {%- for product in collections.productionScaleInhibitorFinishedProducts -%}
+        <ol>
+            <li>{{ product.data.name }}</li>
+        </ol>
+    {%- endfor -%}
+
+    <h2>Demulsifiers/Paraffin Products</h2>
+
+    <h3>Concentrates</h3>
+    {%- for product in collections.productionDemulsifierConcentrates -%}
+        <ol>
+            <li>{{ product.data.name }}</li>
+        </ol>
+    {%- endfor -%}
 </div>

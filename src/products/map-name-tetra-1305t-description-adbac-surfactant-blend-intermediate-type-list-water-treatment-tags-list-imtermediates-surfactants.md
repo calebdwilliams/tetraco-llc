@@ -4,6 +4,6 @@ description: ADBAC surfactant blend intermediate
 type:
   - Water Treatment
 tags:
-  - Imtermediates
+  - Intermediates
   - Surfactants
 ---

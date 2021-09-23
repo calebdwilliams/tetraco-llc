@@ -5,6 +5,6 @@ activity: "40"
 type:
   - Production Chemicals
 tags:
-  - Imtermediates
+  - Intermediates
   - Corrosion Inhibitors
 ---
