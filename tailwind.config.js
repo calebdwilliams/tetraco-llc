@@ -17,6 +17,10 @@ module.exports = {
       })
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      
+    }
+  },
   plugins: [require("@tailwindcss/typography")],
 };

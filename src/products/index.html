@@ -1,11 +1,11 @@
 ---
-title: Corrosion Inhibitors
+title: Products
 ---
 
 <div class="grid grid-cols-1">
     <h3 class="font-medium font-base mb-4">Concentrates</h3>
     <ul>
-        {%- for product in collections.productionCorrosionInhibitorConcentrates -%}
+        {%- for product in collections.products -%}
             <li itemscope itemtype="https://schema.org/Product" class="p-5 border rounded border-gray-200 mb-4">
                 <h4 itemprop="name" class="text-xl font-medium mb-2">{{ product.data.name }}</h4>
                 <p itemprop="description" class="text-base mb-4">{{ product.data.description }}</p>
@@ -19,50 +19,4 @@ title: Corrosion Inhibitors
             </li>
         {%- endfor -%}
     </ul>
-
-    <h3>Intermediates</h3>
-    {%- for product in collections.productionCorrosionInhibitorIntermediates -%}
-        <ol>
-            <li>{{ product.data.name }}</li>
-        </ol>
-    {%- endfor -%}
-
-    <h3>Finished Products</h3>
-    {%- for product in collections.productionCorrosionInhibitorFinishedProducts -%}
-        <ol>
-            <li>{{ product.data.name }}</li>
-        </ol>
-    {%- endfor -%}
-<hr>
-    <h2>Scale Inhibitors</h2>
-
-    <h3>Concentrates</h3>
-    {%- for product in collections.productionScaleInhibitorConcentrates -%}
-        <ol>
-            <li>{{ product.data.name }}</li>
-        </ol>
-    {%- endfor -%}
-
-    <h3>Intermediates</h3>
-    {%- for product in collections.productionScaleInhibitorIntermediates -%}
-        <ol>
-            <li>{{ product.data.name }}</li>
-        </ol>
-    {%- endfor -%}
-
-    <h3>Finished Products</h3>
-    {%- for product in collections.productionScaleInhibitorFinishedProducts -%}
-        <ol>
-            <li>{{ product.data.name }}</li>
-        </ol>
-    {%- endfor -%}
-
-    <h2>Demulsifiers/Paraffin Products</h2>
-
-    <h3>Concentrates</h3>
-    {%- for product in collections.productionDemulsifierConcentrates -%}
-        <ol>
-            <li>{{ product.data.name }}</li>
-        </ol>
-    {%- endfor -%}
 </div>
