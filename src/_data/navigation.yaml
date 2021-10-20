@@ -14,4 +14,4 @@ items:
   - text: Mid-Stream
     url: "/products/mid-stream"
   - text: Contact
-    url: "contact"
+    url: "/contact"
